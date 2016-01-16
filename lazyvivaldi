@@ -1,0 +1,11 @@
+#!/system/bin/sh
+#Expected to be stored in /data/local/userinit
+#...or at least that should work. Issue me if you find any problem!
+
+#sets an infinite loop in order to continuously execute the script
+while true; do
+
+#moves any mp3 file found in Downloads to Music
+	mv /sdcard/Download/*mp3 /sdcard/Music
+
+done
